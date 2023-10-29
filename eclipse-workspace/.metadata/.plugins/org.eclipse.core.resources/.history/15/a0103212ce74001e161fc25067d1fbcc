@@ -1,0 +1,41 @@
+package Pack;
+
+import java.util.ArrayList;
+
+public class CoreJava2 {
+
+	public static void main(String[] args) {
+		// For loop with IF Else condition
+		
+		int[] a= {1,9,8,12,44,8,3};
+		
+		for(int i=0;i<a.length;i++)
+			if(a[i]%2==0)
+		{
+			System.out.println(a[i]);
+			//break;							//to break the loop
+	}
+			else
+			{
+				System.out.println(a[i]+"number is odd");
+			}
+		
+		//ArrayList
+		ArrayList <String>a=new ArrayList <String>();  //memory is allocted when we add the element no need of pre-defined memory
+		a.add("nidhi");
+		a.add("gupta");
+		a.add("learning");
+		a.add("java");
+		System.out.println(a.get(3));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			}
+}

@@ -1,0 +1,24 @@
+package Pack;
+
+public class CoreJava {
+
+	public static void main(String[] args) {
+		// Creating Variables
+		int a= 5;
+		String s = "Nidhi";
+		char ch = 'g';
+		double f = 12.5;
+		boolean b = true;
+		System.out.println(a);
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

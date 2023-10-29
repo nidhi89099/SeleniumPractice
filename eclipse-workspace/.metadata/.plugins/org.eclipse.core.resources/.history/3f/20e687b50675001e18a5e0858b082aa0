@@ -1,0 +1,16 @@
+package Pack;
+
+public class Method_demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+public void Method1()
+{
+	
+	System.out.println("Hello world");
+}
+	
+	
+}
