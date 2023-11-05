@@ -13,11 +13,13 @@ public class CheckboxHandling {
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
 		Thread.sleep(1000);//assertios are used for validation purpose
+		
 		Assert.assertFalse(driver.findElement(By.xpath("//label[@for='ctl00_mainContent_chk_StudentDiscount']")).isSelected());
 		//System.out.println(driver.findElement(By.xpath("//label[@for='ctl00_mainContent_chk_StudentDiscount']")).isSelected());
 		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 		//Assert.assertEquals(driver.findElements(By.cssSelector("input[type='checkbox']")).size(),5); //failed to check
 		Assert.assertEquals(driver.findElements(By.cssSelector("input[type='checkbox']")).size(),6);
+		
 		
 
 	}
