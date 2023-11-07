@@ -16,7 +16,7 @@ public class Windows_handling {
 		driver.findElement(By.cssSelector(".blinkingText")).click();
 		Set<String> windows = driver.getWindowHandles(); // store the window references
 		Iterator<String> it = windows.iterator();
-		// Iterator is a class.Iterators in Java are used in the Collection framework to
+		// Iterator is a Interface.Iterators in Java are used in the Collection framework to
 		// retrieve elements one by one
 		String parentId = it.next();
 		String childId = it.next();
