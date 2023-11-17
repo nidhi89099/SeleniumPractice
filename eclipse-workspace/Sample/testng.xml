@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+		
+      <class name="selenium.JavaStreams"/>
+      <class name="testNG.demo2"/>
+      <class name="testNG.demo1">
+      
+      <methods>
+		  <exclude name="test1">
+			  
+		  </exclude>
+			  </methods>
+			   </class>
+      
+    </classes>
+    
+    
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
