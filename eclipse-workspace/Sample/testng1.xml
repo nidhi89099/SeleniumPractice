@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+ <test name="Regression">
+	 <groups>
+		 <run>
+			 <include name="smoke"/>
+		 </run>
+	 </groups>
+	 
+    <classes>
+      <class name="testNG.demo1"/>
+      <class name="selenium.JavaStreams"/>
+      <class name="testNG.demo2"/>
+    </classes>
+   </test>
+</suite> <!-- Suite -->
