@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="Suite">
+	<listeners>
+		<listener class-name ="testNG.Listeners1"/>
+	</listeners>
+	<parameter name ="URL" value="www.yahoo.com"/> 
   <test thread-count="5" name="Test">
     <classes>
 		

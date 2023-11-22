@@ -35,8 +35,13 @@ public class WebElementScreenShot {
 		driver.switchTo().window(parentId);
 		WebElement name = driver.findElement(By.name("name"));
 		name.sendKeys(courseName);
+		// get screenshot
 		File file = name.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(file, new File("name.png"));
+
+		// get height and width
+		System.out.println(name.getRect().getDimension().getHeight());
+		System.out.println(name.getRect().getDimension().getWidth());
 
 		driver.quit();
 	}

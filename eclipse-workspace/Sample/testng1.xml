@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="Suite">
+	<listeners>
+		<listener class-name ="testNG.Listeners1"/>
+	</listeners>
+	<parameter name="URL" value="www.yahoo.com"/>
  <test name="Regression">
+	 <parameter name="URL" value="www.google.com"/>
+	 <parameter name="API Key/username" value="1234"/>
 	 <groups>
 		 <run>
 			 <include name="smoke"/>

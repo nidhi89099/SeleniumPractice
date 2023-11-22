@@ -13,16 +13,17 @@ public class WebTableAssignment {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		WebElement table=driver.findElement(By.id("product"));
+		WebElement table = driver.findElement(By.id("product"));
 		System.out.println(table.findElements(By.tagName("tr")).size());
 		System.out.println(table.findElements(By.tagName("th")).size());
-	List<WebElement> secondrow	=table.findElements(By.tagName("tr")).get(2).findElements(By.tagName("td"));
-	//System.out.println(secondrow.get(0).getText());
-	//System.out.println(secondrow.get(1).getText());
-	for(int i=0;i<secondrow.size();i++)
-	{
-		System.out.println(secondrow.get(i).getText());
-	}
+		List<WebElement> secondrow = table.findElements(By.tagName("tr")).get(2).findElements(By.tagName("td"));
+		System.out.println(	"Row 2 Contents: " + driver.findElement(By.cssSelector(".left-align tr:nth-child(3)")).getText());
+		
+		// System.out.println(secondrow.get(0).getText());
+		// System.out.println(secondrow.get(1).getText());
+		for (int i = 0; i < secondrow.size(); i++) {
+			System.out.println(secondrow.get(i).getText());
+		}
 
-}
+	}
 }

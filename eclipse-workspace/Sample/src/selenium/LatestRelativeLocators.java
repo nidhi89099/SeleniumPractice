@@ -23,6 +23,7 @@ public class LatestRelativeLocators {
 		
 		WebElement right=driver.findElement(By.id("inlineRadio2"));
 		driver.findElement(with(By.tagName("label")).toRightOf(right)).click();
+		
 
 	}
 

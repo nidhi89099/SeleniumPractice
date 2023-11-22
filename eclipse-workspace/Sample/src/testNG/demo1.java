@@ -1,15 +1,18 @@
 package testNG;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeSuite;
+
 public class demo1 {
 	@Test
 	private void test1() {
 		System.out.println("hello testNG");
+		
 
 	}
 
@@ -19,7 +22,7 @@ public class demo1 {
 
 	}
 
-	@Test(groups= {"smoke"})
+	@Test(groups = { "smoke" })
 	private void test3() {
 
 		System.out.println("Thank you");
@@ -30,33 +33,29 @@ public class demo1 {
 	private void test5() {
 		System.out.println("i am executing after test");
 	}
-	
+
 	@BeforeMethod
-	private void BftestMethod()
-	{
+	private void BftestMethod() {
 		System.out.println("i am executing before everry test method");
-		
+
 	}
 
 	@AfterMethod
-	private void AftertestMethod()
-	{
+	private void AftertestMethod() {
 		System.out.println("i am executing after everry test method");
-		
+
 	}
-	
+
 	@AfterSuite
-	private void AfterSuite()
-	{
+	private void AfterSuite() {
 		System.out.println("i am executing after everry Suite ");
-		
+
 	}
+
 	@BeforeSuite
-	private void BeforeSuite()
-	{
+	private void BeforeSuite() {
 		System.out.println("i am executing Before every test suite");
-		
+
 	}
 
 }
-

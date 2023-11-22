@@ -28,18 +28,14 @@ public class InvokeMultipleWindows {
 		driver.get("https://courses.rahulshettyacademy.com/courses");
 		// WebElement courseName =driver.findElement(By.cssSelector("[title='Core Java
 		// for Automation Testers + Interview Programs']"));
-		String courseName = driver.findElement(By.xpath("//div[@title='Core Java for Automation Testers + Interview Programs']"))
+		String courseName = driver
+				.findElement(By.xpath("//div[@title='Core Java for Automation Testers + Interview Programs']"))
 				.getText();
 		System.out.println(courseName);
 		driver.switchTo().window(parentId);
-		WebElement name=driver.findElement(By.name("name"));
-				name.sendKeys(courseName);
-			File file	=name.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(file,new File("name.png"));
+		 driver.findElement(By.name("name")).sendKeys(courseName);
 		
-		
-		
-		//driver.quit();
+		driver.quit();
 
 	}
 
